@@ -12,3 +12,6 @@ add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
 add_executable(mytest EXCLUDE_FROM_ALL mytest.cxx)
 add_test(mytest mytest)
 add_dependencies(check mytest)
+
+install(TARGETS foo DESTINATION bin)
+
